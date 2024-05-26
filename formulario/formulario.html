@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoja de Vida Estudiantes</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="logo">
+    <img src="C:\Users\David Alejo\OneDrive\Documentos\form\WhatsApp Image 2024-04-15 at 6.42.30 PM.jpeg" alt="Logo">
+  </div>
+  <form id="simatForm" onsubmit="return validateForm()">
+    <h1 class="titulo">Hoja de Vida Estudiantes</h1>
+    <div class="input-group">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required>
+    </div>
+    <div class="input-group">
+      <label for="documento">Documento de identidad:</label>
+      <input type="text" id="documento" name="documento" required>
+    </div>
+    <div class="input-group">
+      <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+    </div>
+    <div class="input-group">
+      <label for="lugar_nacimiento">Lugar de Nacimiento:</label>
+      <input type="text" id="lugar_nacimiento" name="lugar_nacimiento" required>
+    </div>
+    <div class="input-group">
+      <label for="direccion">Dirección de residencia:</label>
+      <input type="text" id="direccion" name="direccion" required>
+    </div>
+    <div class="input-group">
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required>
+    </div>
+    <div class="input-group">
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+    </div>
+    <div class="input-group">
+      <label for="grado">Grado:</label>
+      <select id="grado" name="grado" required>
+        <option value="">Seleccione un grado</option>
+        <option value="primero">Primero</option>
+        <option value="segundo">Segundo</option>
+        <option value="tercero">Tercero</option>
+        <option value="cuarto">Cuarto</option>
+        <option value="quinto">Quinto</option>
+        <option value="sexto">Sexto</option>
+        <option value="septimo">Séptimo</option>
+        <option value="octavo">Octavo</option>
+        <option value="noveno">Noveno</option>
+        <option value="decimo">Décimo</option>
+        <option value="once">Once</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="eps">EPS:</label>
+      <input type="text" id="eps" name="eps" required>
+    </div>
+    <div class="input-group">
+      <label for="rh">Grupo Sanguíneo y RH:</label>
+      <input type="text" id="rh" name="rh" required>
+    </div>
+    <div class="input-group">
+      <label for="discapacidad">Discapacidad:</label>
+      <input type="text" id="discapacidad" name="discapacidad" required>
+    </div>
+    <div class="input-group">
+      <label for="acudiente">Nombre del acudiente:</label>
+      <input type="text" id="acudiente" name="acudiente" required>
+    </div>
+    <div class="input-group">
+      <label for="parentesco">Parentesco con el acudiente:</label>
+      <input type="text" id="parentesco" name="parentesco" required>
+    </div>
+    <div class="input-group">
+      <label for="telefono_acudiente">Teléfono del acudiente:</label>
+      <input type="tel" id="telefono_acudiente" name="telefono_acudiente" required>
+    </div>
+    <div class="input-group">
+      <label for="ciudad">Ciudad de residencia:</label>
+      <input type="text" id="ciudad" name="ciudad" required>
+    </div>
+    <div class="input-group">
+      <label for="estrato">Estrato socioeconómico:</label>
+      <select id="estrato" name="estrato" required>
+        <option value="">Seleccione un estrato</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="sisben">Puntaje SISBEN:</label>
+      <input type="text" id="sisben" name="sisben" required>
+    </div>
+    <div class="input-group">
+      <label for="etnia">Etnia:</label>
+      <select id="etnia" name="etnia" required>
+        <option value="">Seleccione una etnia</option>
+        <option value="Indígena">Indígena</option>
+        <option value="Afrodescendiente">Afrodescendiente</option>
+        <option value="Raizal">Raizal</option>
+        <option value="Palenquero">Palenquero</option>
+        <option value="Rrom (Gitano)">Rrom (Gitano)</option>
+        <option value="Ninguna">Ninguna</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="religion">Religión:</label>
+      <input type="text" id="religion" name="religion" required>
+    </div>
+    <div class="input-group">
+      <label for="grado_repetido">¿Ha repetido algún grado?:</label>
+      <select id="grado_repetido" name="grado_repetido" required>
+        <option value="">Seleccione una opción</option>
+        <option value="Si">Sí</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="razon_repeticion">Razón de repetición:</label>
+      <input type="text" id="razon_repeticion" name="razon_repeticion">
+    </div>
+    <div class="input-group">
+      <label for="situacion_academica">Situación Académica:</label>
+      <select id="situacion_academica" name="situacion_academica" required>
+        <option value="">Seleccione una situación</option>
+        <option value="Regular">Regular</option>
+        <option value="Bajo desempeño">Bajo desempeño</option>
+        <option value="Excelencia académica">Excelencia académica</option>
+        <option value="Bajo rendimiento">Bajo rendimiento</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="curso_reforzamiento">¿Necesita curso de reforzamiento?:</label>
+      <select id="curso_reforzamiento" name="curso_reforzamiento" required>
+        <option value="">Seleccione una opción</option>
+        <option value="Si">Sí</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="grupo">Grupo:</label>
+      <input type="text" id="grupo" name="grupo" required>
+    </div>
+    <div class="input-group">
+      <input type="submit" value="Enviar">
+    </div>
+  </form>
+
+  <div id="error-message" class="error"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
