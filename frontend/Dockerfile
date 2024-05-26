@@ -1,8 +1,6 @@
-# Dockerfile para Front-End
-FROM node:14
+# Dockerfile para Front-End con un servidor HTTP simple
+FROM python:3.9-slim
 WORKDIR /app
-COPY package*.json ./
-RUN npm install
 COPY . .
-CMD ["npm", "start"]
-EXPOSE 3000
+CMD ["python", "-m", "http.server", "80"]
+EXPOSE 80
