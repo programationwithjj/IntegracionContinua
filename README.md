@@ -1,4 +1,4 @@
-# IntegracionContinua# Integración Continua
+# Integración Continua
 
 Este proyecto es una aplicación de gestión de estudiantes que consta de un frontend, un backend y una base de datos MySQL. El frontend está construido con HTML, CSS y JavaScript. El backend está construido con Node.js y Express, y utiliza Sequelize para interactuar con la base de datos MySQL.
 
