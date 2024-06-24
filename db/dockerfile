@@ -1,8 +1,0 @@
-# Dockerfile para la Base de Datos
-FROM mysql:5.7
-ENV MYSQL_ROOT_PASSWORD=root
-ENV MYSQL_DATABASE=IntegracionContinua
-ENV MYSQL_USER=root
-ENV MYSQL_PASSWORD=V@l3nt1n@1601
-EXPOSE 3306
-
