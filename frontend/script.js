@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('simatForm');
     form.addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevenir el envío del formulario
-  
+        event.preventDefault(); // Prevenir el envío del formulario por defecto
+
         const formData = new FormData(form);
         const data = {};
         formData.forEach((value, key) => {
             data[key] = value;
         });
-  
+
         fetch('http://localhost:3000/register', {
             method: 'POST',
             headers: {
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .then(data => {
             if (data.message) {
-                alert(data.message);
+                console.log(data.message); // Mostrar mensaje en la consola
                 form.reset();
             }
         })
@@ -33,5 +33,4 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById('error-message').textContent = 'Hubo un error al enviar el formulario.';
         });
     });
-  });
-  
+});
