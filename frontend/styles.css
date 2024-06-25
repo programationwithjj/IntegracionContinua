@@ -1,0 +1,87 @@
+/* Estilos básicos para el formulario y la estructura de la página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-group input, 
+.input-group select, 
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-group textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+  background-color: #004494;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+}
+
+/* Estilos para mensajes de error y validaciones */
+.error-message {
+  color: #ff0000;
+  font-size: 0.875em;
+  margin-top: 5px;
+}
+
+/* Respuestas visuales para la validación de los campos */
+input:invalid {
+  border-color: #e63946;
+}
+
+input:valid {
+  border-color: #2a9d8f;
+}
